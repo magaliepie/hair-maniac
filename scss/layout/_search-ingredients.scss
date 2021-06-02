@@ -1,0 +1,36 @@
+.textarea-field {
+    background-color: #f7f4f4;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    resize: none;
+
+    @include breakpoint-sm {
+        width: 100%;
+        padding: 10px;
+        border-radius: none;
+        font-size: 15px;
+    }
+}
+.result {
+    text-align: left;
+    padding: 10px;
+    font-size: 23px;
+    font-weight: 600;
+
+    @include breakpoint-sm {
+        padding: 5px;
+        font-size: 15px;
+    }
+}
+.result div {
+    padding: 10px;
+
+    @include breakpoint-sm {
+        padding: 5px;
+    }
+}

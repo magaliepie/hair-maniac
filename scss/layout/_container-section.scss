@@ -1,0 +1,48 @@
+.container {
+    margin: auto;
+    height: 60vh;
+    width: 80%;
+    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+
+    @include breakpoint-sm {
+        width: 90%;
+        padding: 5px;
+        margin: 0;
+    }
+}
+.container h1 {
+    color: white;
+    background-color: rgb(152, 152, 170);
+    border-radius: 50px;
+    width: 250px;
+    margin: 20px auto;
+    padding: 15px;
+}
+.container-text {
+    max-width: 900px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-right: 20px;
+
+    @include breakpoint-sm {
+        width: 100%;
+        font-size: 20px;
+        padding: 0;
+        margin-right: 0;
+    }
+}
+.container-text h4 {
+    margin: 10px;
+}
+.search-container {
+    display: flex;
+    flex-direction: column;
+}
+.search-container h2 {
+    margin: 50px;
+}

@@ -1,0 +1,58 @@
+.buttons {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+.btn0,
+.btn1,
+.btn2,
+.btn3 {
+    background-color: rgb(152, 152, 170);
+    width: 250px;
+    font-size: 20px;
+    color: white;
+    border-radius: 50px;
+    padding: 30px;
+    margin: 10px 40px 10px 0;
+    outline: none;
+    border: 1px solid white;
+}
+.btn0:hover,
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
+    cursor: pointer;
+    background-color: rgb(196, 196, 238);
+}
+
+.close-btn {
+    background-color: rgb(219, 214, 214);
+    border: none;
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.searchBtn {
+    background-color: #546cc3;
+    color: white;
+    width: 30%;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+        background-color: #455692;
+    }
+    @include breakpoint-sm {
+        width: 100%;
+        margin: 20px 0;
+        padding: 10px;
+        font-size: 20px;
+    }
+}

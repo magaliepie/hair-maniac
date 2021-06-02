@@ -1,0 +1,42 @@
+@import '../settings/breakpoints';
+
+.menu-navigation {
+    margin: 0;
+}
+.list-items {
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 0 100px 0;
+
+    @include breakpoint-sm {
+        flex-direction: column;
+        width: 80%;
+    }
+    .active-navigation {
+        background-color: rgb(70, 69, 69);
+    }
+}
+
+.item {
+    margin: 10px;
+    background-color: rgb(161, 161, 161);
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+
+    @include breakpoint-sm {
+        display: flex;
+        width: 50%;
+        margin: 10px auto;
+        border-radius: 10px;
+        justify-content: center;
+    }
+
+    &:hover {
+        background-color: rgb(204, 202, 202);
+    }
+}
